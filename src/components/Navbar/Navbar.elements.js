@@ -1,46 +1,46 @@
-import styled from 'styled-components';
-import { GiMountaintop } from 'react-icons/gi';
-import { Link } from 'react-router-dom';
-import { Container } from '../../globalStyles';
+import styled from "styled-components";
+import { GiMountaintop } from "react-icons/gi";
+import { Link } from "react-router-dom";
+import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
-background: #1D2027;
-height: 80px;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 1.2rem;
-position: sticky;
-top: 0;
-z-index: 100;
+  background: #1d2027;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 `;
 
 export const NavbarContainer = styled(Container)`
-display: flex;
-justify-content: space-between;
-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
 
-${Container}
+  ${Container}
 `;
 
 export const NavLogo = styled(Link)`
-color: #FFFF;
-justify-self: flex-start;
-cursor: pointer;
-text-decoration: none;
-font-size: 2rem;
-display:flex;
-align-items: center;
+  color: #ffffff;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
 `;
 
 export const NavIcon = styled(GiMountaintop)`
-margin-right: 0.5rem;
+  margin-right: 10px;
 `;
 
 export const MobileIcon = styled.div`
-display: none;
+  display: none;
 
-@media screen and (max-width: 960px) { 
+  @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
     top: 0;
@@ -48,66 +48,65 @@ display: none;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-}
+  }
 `;
 
 export const NavMenu = styled.ul`
-display: flex;
-align-items: center;
-list-style: none;
-text-align: center;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
 
-@media screen and (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: ${({click}) => (click ? 0 : '-100%')};
+    left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #1D2027;
-}
+    background: #1d2027;
+  }
 `;
 
 export const NavItem = styled.li`
-height: 80px;
-border-bottom: 2px solid transparent;
+  height: 80px;
+  border-bottom: 1px solid transparent;
 
-&:hover {
-    border-bottom: 2px solid #FF7A5A;
-}
+  &:hover {
+    border-bottom: 2px solid #5570ff;
+  }
 
-@media screen and (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     width: 100%;
     &:hover {
-        border: none;
+      border: none;
     }
-}
+  }
 `;
 
 export const NavLinks = styled(Link)`
-color: #FFFF;
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 0.5rem 1rem;
-height: 100%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  height: 100%;
 
-@media screen and (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     text-align: center;
-    padding: 2rem;
+    padding: 32px;
     width: 100%;
     display: table;
 
-
     &:hover {
-        color: #FF7A5A;
-        transition: all 0.3s ease;
+      color: #5570ff;
+      transition: all 0.3s ease;
+      font-size: 1.25rem;
     }
-
-}
+  }
 `;
 
 export const NavItemBtn = styled.li`
