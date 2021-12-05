@@ -133,10 +133,11 @@ export const BarChartContainer = styled.div`
 export const PieChartWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: auto;
   width: 100%;
 
   @media screen and (max-width: 991px) {
