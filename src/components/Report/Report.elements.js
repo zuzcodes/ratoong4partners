@@ -49,7 +49,7 @@ export const ReportSubheading = styled.h3`
 `;
 
 export const ReportImg = styled.img`
-  max-width: 350px;
+  width: 350px;
   height: 100%;
 `;
 
@@ -162,6 +162,8 @@ export const RecommendationsContainer = styled.div`
 
   @media screen and (max-width: 991px) {
     width: 100%;
+    padding: 20px 0;
+    margin: 30px auto;
   }
 `;
 
@@ -187,10 +189,18 @@ export const RecommendationNumber = styled.p`
   font-weight: 700;
   padding-right: 20px;
   color: #5570ff;
+
+  @media screen and (max-width: 991px) {
+   font-size: 4rem
+  }
 `;
 
 export const RecommendationText = styled.p`
   font-size: 1rem;
   color: #ffffff;
   text-align: left;
+
+  @media screen and (max-width: 991px) {
+   font-size: 0.8rem
+  }
 `;
