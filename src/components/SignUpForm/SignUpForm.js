@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "../../globalStyles";
+import validate from "../validateForm";
+import useForm from "../useForm";
 import {
   SignUpSection,
   SignUpFormContainer,
@@ -9,28 +9,28 @@ import {
   SignUpFormName,
   SignUpFormEmail,
   SignUpFormPassword,
+  Error,
 } from "./SignUpForm.elements";
 
-function SignUpForm() {
-  const [email, setEmail] = useState("");
-  const emailChange = (e) => setEmail(e.target.value);
-
+const SignUpForm = ({ submitForm }) => {
+  const { handleChange, handleSubmit, values, errors } = useForm(submitForm, validate);
   return (
     <SignUpSection>
-      <SignUpFormContainer>
+      <SignUpFormContainer onSubmit={handleSubmit} noValidate>
         <SignUpFormHeading>SIGN UP</SignUpFormHeading>
         <SignUpFormSubheading>Join the snow partnership now!</SignUpFormSubheading>
-        <SignUpFormName name="name" type="text" placeholder="Name" required />
-        <SignUpFormEmail name="email" type="email" placeholder="Email" value={email} onChange={emailChange} required />
-        <SignUpFormPassword name="password" type="password" placeholder="Password" required />
-        <Link to="/sign-up-confirmation">
-          <Button primary display wide type="submit">
-            SIGN UP
-          </Button>
-        </Link>
+        <Error>{errors.name && <p>{errors.name}</p>}</Error>
+        <SignUpFormName type="text" name="name" placeholder="Name" value={values.username} onChange={handleChange} />
+        <Error>{errors.email && <p>{errors.email}</p>}</Error>
+        <SignUpFormEmail type="email" name="email" placeholder="Email" value={values.email} onChange={handleChange} />
+        <Error>{errors.password && <p>{errors.password}</p>}</Error>
+        <SignUpFormPassword type="password" name="password" placeholder="Password" value={values.password} onChange={handleChange} />
+        <Button primary display wide type="submit">
+          SIGN UP
+        </Button>
       </SignUpFormContainer>
     </SignUpSection>
   );
-}
+};
 
 export default SignUpForm;

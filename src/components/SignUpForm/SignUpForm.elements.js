@@ -89,3 +89,10 @@ export const SignUpFormPassword = styled.input`
     border: 2px solid #5570ff;
   }
 `;
+
+export const Error = styled.p`
+padding-bottom: 5px;
+text-align: left;
+color: #ffc2a4;
+font-size: 0.8rem;
+`
