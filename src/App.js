@@ -7,10 +7,11 @@ import Demo from './pages/Demo/Demo';
 import SignUp from "./pages/SignUp/SignUp";
 import ContactConfirmation from "./pages/ContactConfirmation/ContactConfirmation";
 import SignUpConfirmation from "./pages/SignUpConfirmation/SignUpConfirmation";
-import { Navbar, Footer, ContactForm } from "./components";
+import { Navbar, Footer } from "./components";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+ 
   return (
     <Router>
       <GlobalStyle />
@@ -19,7 +20,6 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/services" exact element={<Services />} />
-        <Route path="/contact" exact element={<ContactForm />} />
         <Route path="/demo" exact element={<Demo />} />
         <Route path="/sign-up" exact element={<SignUp />} />
         <Route path="/contact-confirmation" exact element={<ContactConfirmation />} />

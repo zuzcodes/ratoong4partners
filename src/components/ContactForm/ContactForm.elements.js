@@ -71,3 +71,10 @@ export const ContactFormText = styled.textarea`
     border: 2px solid #cfdaff;
   }
 `;
+
+export const Error = styled.p`
+padding-bottom: 5px;
+text-align: left;
+color: #ffc2a4;
+font-size: 0.8rem;
+`

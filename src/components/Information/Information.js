@@ -28,7 +28,7 @@ function Information({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Text lightTextDesc={lightTextDesc}>{description}</Text>
-                <Link to="/sign-up">
+                <Link to="/demo">
                   <Button primary={primary} display={display}>
                     {buttonLabel}
                   </Button>

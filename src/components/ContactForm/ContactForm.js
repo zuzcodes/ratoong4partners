@@ -1,24 +1,34 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "../../globalStyles";
-import { ContactSection, ContactFormContainer, ContactFormHeading, ContactFormSubheading, ContactFormEmail, ContactFormText } from "./ContactForm.elements";
+import validateContact from '../validateContact';
+import useContact from '../useContact';
+import { ContactSection, ContactFormContainer, ContactFormHeading, ContactFormSubheading, ContactFormEmail, ContactFormText, Error } from "./ContactForm.elements";
 
-function ContactForm() {
-  const [email, setEmail] = useState("");
-  const emailChange = (e) => setEmail(e.target.value);
-
-  return (
+const ContactForm = ( { submitForm } ) => {
+  const { handleChange, handleSubmit, value, error } = useContact(
+     submitForm,
+     validateContact
+   );   
+   return (
     <ContactSection>
       <ContactFormContainer>
         <ContactFormHeading>GET IN TOUCH</ContactFormHeading>
         <ContactFormSubheading>Always happy to hear from you!</ContactFormSubheading>
-        <ContactFormEmail name="email" type="email" placeholder="Email" value={email} onChange={emailChange} required />
+        <form onSubmit={handleSubmit} noValidate>
+        <Error>{error.email && <p>{error.email}</p>}</Error>
+        <ContactFormEmail
+            type='email'
+            name='email'
+            placeholder='Email'
+            value={value.email}
+            onChange={handleChange}
+         />
         <ContactFormText name="message" type="text" placeholder="Message" required />
-        <Link to="/contact-confirmation">
+        
           <Button wide display type="submit">
             SEND
           </Button>
-        </Link>
+          </form>
+       
       </ContactFormContainer>
     </ContactSection>
   );

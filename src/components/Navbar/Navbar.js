@@ -43,9 +43,6 @@ const Navbar = () => {
             <NavItem>
               <NavLinks to="/demo">Demo</NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks to="/contact">Contact</NavLinks>
-            </NavItem>
             <NavItemBtn>
               {button ? (
                 <NavBtnLink to="/sign-up">
