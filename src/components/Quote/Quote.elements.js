@@ -22,10 +22,10 @@ export const QuoteText = styled.h2`
   font-size: 2rem;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  color: #1d2027;
 `;
 
 export const QuoteSubtext = styled.p`
   font-size: 1.2rem;
-  color: #ffffff;
+  color: #1d2027;
 `;
