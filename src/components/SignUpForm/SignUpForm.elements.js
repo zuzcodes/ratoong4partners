@@ -38,7 +38,7 @@ export const SignUpFormName = styled.input`
   border-radius: 2px;
   margin: 0 0 16px 0;
   outline: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: 2px solid #ffffff;
   width: 100%;
 
@@ -57,7 +57,7 @@ export const SignUpFormEmail = styled.input`
   border-radius: 2px;
   margin: 0 0 16px 0;
   outline: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: 2px solid #ffffff;
   width: 100%;
 
@@ -76,7 +76,7 @@ export const SignUpFormPassword = styled.input`
   border-radius: 2px;
   margin: 0 0 16px 0;
   outline: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   border: 2px solid #ffffff;
   width: 100%;
 

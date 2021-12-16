@@ -29,7 +29,7 @@ export const ContactFormHeading = styled.h2`
 
 export const ContactFormSubheading = styled.h3`
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 1.3rem;
   color: #ffffff;
 `;
 
@@ -38,7 +38,7 @@ export const ContactFormEmail = styled.input`
   border-radius: 2px;
   margin: 0 0 16px 0;
   outline: none;
-  font-size: 14px;
+  font-size: 0.9rem;
   border: 2px solid #ffffff;
   width: 100%;
 
@@ -57,7 +57,7 @@ export const ContactFormText = styled.textarea`
   border-radius: 2px;
   margin: 0 0 16px 0;
   outline: none;
-  font-size: 14px;
+  font-size: 0.9rem;
   border: 2px solid #ffffff;
   width: 100%;
 

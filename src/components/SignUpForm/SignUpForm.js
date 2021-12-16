@@ -19,7 +19,7 @@ function SignUpForm() {
     <SignUpSection>
       <SignUpFormContainer>
         <SignUpFormHeading>SIGN UP</SignUpFormHeading>
-        <SignUpFormSubheading>Join the snow partnership!</SignUpFormSubheading>
+        <SignUpFormSubheading>Join the snow partnership now!</SignUpFormSubheading>
         <SignUpFormName name="name" type="text" placeholder="Name" required />
         <SignUpFormEmail name="email" type="email" placeholder="Email" value={email} onChange={emailChange} required />
         <SignUpFormPassword name="password" type="password" placeholder="Password" required />

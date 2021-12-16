@@ -70,7 +70,7 @@ export const Heading = styled.h1`
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#1c2237")};
 `;
 
-export const Subtitle = styled.p`
+export const Text = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-size: 1.1rem;

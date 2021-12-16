@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Button } from "../../globalStyles";
-import { InformationSection, InformationRow, InformationColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img } from "./Information.elements";
+import { InformationSection, InformationRow, InformationColumn, TextWrapper, TopLine, Heading, Text, ImgWrapper, Img } from "./Information.elements";
 
 function Information({
   primary,
@@ -27,7 +27,7 @@ function Information({
               <TextWrapper>
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                <Text lightTextDesc={lightTextDesc}>{description}</Text>
                 <Link to="/sign-up">
                   <Button primary={primary} display={display}>
                     {buttonLabel}

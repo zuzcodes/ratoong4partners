@@ -30,6 +30,6 @@ export const data = {
 };
 
 function PieChartAge() {
-  return <Pie data={data} options={options} width="300px" />;
+  return <Pie data={data} options={options} width="350px" />;
 }
 export default PieChartAge;
