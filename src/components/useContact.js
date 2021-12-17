@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const useContact = (callback, validate) => {
-  console.log("!!!!", callback);
   const [value, setValue] = useState({
     email: "",
   });
