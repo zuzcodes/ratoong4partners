@@ -1,6 +1,7 @@
 export const serviceObjOne = {
   primary: false,
-  display: true,
+  display: false,
+  show: true,
   lightBg: false,
   lightTopLine: true,
   lightText: true,
@@ -37,6 +38,7 @@ export const serviceObjTwo = {
 export const serviceObjThree = {
   primary: true,
   display: true,
+  show: false,
   lightBg: false,
   lightTopLine: false,
   lightText: true,

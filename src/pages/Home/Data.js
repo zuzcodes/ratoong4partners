@@ -1,6 +1,7 @@
 export const informationObjOne = {
   primary: true,
   display: true,
+  show: false,
   lightBg: false,
   lightTopLine: false,
   lightText: true,
@@ -36,7 +37,8 @@ export const informationObjTwo = {
 
 export const informationObjThree = {
   primary: false,
-  display: true,
+  display: false,
+  show: true,
   lightBg: false,
   lightTopLine: true,
   lightText: true,

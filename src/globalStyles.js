@@ -51,4 +51,30 @@ export const Button = styled.button`
   }
 `;
 
+export const Btn = styled.button`
+  border-radius: 4px;
+  border: 2px solid;
+  padding: 12px 40px;
+  border-color: #cfdaff;
+  width: auto;
+  display: ${({ show }) => (show ? "auto" : "none")};
+  color: #cfdaff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background: none;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.3s ease-out;
+    color: #1d2027;
+    background-color: #cfdaff;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
 export default GlobalStyle;

@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Button } from "../../globalStyles";
+import { Container, Button, Btn } from "../../globalStyles";
 import { InformationSection, InformationRow, InformationColumn, TextWrapper, TopLine, Heading, Text, ImgWrapper, Img } from "./Information.elements";
 
 function Information({
   primary,
   display,
+  show,
   lightBg,
   topLine,
   lightTopLine,
@@ -28,10 +29,15 @@ function Information({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Text lightTextDesc={lightTextDesc}>{description}</Text>
-                <Link to="/demo">
-                  <Button primary={primary} display={display}>
+                <Link to="/sign-up">
+                  <Button primary={primary} display={display} show={show}>
                     {buttonLabel}
                   </Button>
+                </Link>
+                <Link to="/demo">
+                  <Btn show={show}>
+                    {buttonLabel}
+                  </Btn>
                 </Link>
               </TextWrapper>
             </InformationColumn>
