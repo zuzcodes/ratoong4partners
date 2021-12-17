@@ -8,7 +8,7 @@ import { ContactForm } from "../../components";
 function Home() {
   const navigate = useNavigate();
   function submitForm() {
-    navigate("/contact-confirmation")
+    navigate("/contact-confirmation");
   }
   return (
     <>
@@ -16,7 +16,7 @@ function Home() {
       <Information {...informationObjTwo} />
       <Quote />
       <Information {...informationObjThree} />
-      <ContactForm submitForm={submitForm}/>
+      <ContactForm submitForm={submitForm} />
     </>
   );
 }

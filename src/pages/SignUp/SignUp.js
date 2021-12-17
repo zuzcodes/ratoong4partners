@@ -5,9 +5,9 @@ import { SignUpForm } from "../../components";
 function SignUp() {
   const navigate = useNavigate();
   function submitForm() {
-    navigate("/sign-up-confirmation")
+    navigate("/sign-up-confirmation");
   }
-  return <SignUpForm submitForm={submitForm} />
+  return <SignUpForm submitForm={submitForm} />;
 }
 
 export default SignUp;

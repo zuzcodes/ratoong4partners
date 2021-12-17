@@ -21,34 +21,32 @@ function Information({
   start,
 }) {
   return (
-      <InformationSection lightBg={lightBg}>
-        <Container>
-          <InformationRow imgStart={imgStart}>
-            <InformationColumn>
-              <TextWrapper>
-                <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Text lightTextDesc={lightTextDesc}>{description}</Text>
-                <Link to="/sign-up">
-                  <Button primary={primary} display={display} show={show}>
-                    {buttonLabel}
-                  </Button>
-                </Link>
-                <Link to="/demo">
-                  <Btn show={show}>
-                    {buttonLabel}
-                  </Btn>
-                </Link>
-              </TextWrapper>
-            </InformationColumn>
-            <InformationColumn>
-              <ImgWrapper start={start}>
-                <Img src={img} alt={alt} />
-              </ImgWrapper>
-            </InformationColumn>
-          </InformationRow>
-        </Container>
-      </InformationSection>
+    <InformationSection lightBg={lightBg}>
+      <Container>
+        <InformationRow imgStart={imgStart}>
+          <InformationColumn>
+            <TextWrapper>
+              <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
+              <Heading lightText={lightText}>{headline}</Heading>
+              <Text lightTextDesc={lightTextDesc}>{description}</Text>
+              <Link to="/sign-up">
+                <Button primary={primary} display={display} show={show}>
+                  {buttonLabel}
+                </Button>
+              </Link>
+              <Link to="/demo">
+                <Btn show={show}>{buttonLabel}</Btn>
+              </Link>
+            </TextWrapper>
+          </InformationColumn>
+          <InformationColumn>
+            <ImgWrapper start={start}>
+              <Img src={img} alt={alt} />
+            </ImgWrapper>
+          </InformationColumn>
+        </InformationRow>
+      </Container>
+    </InformationSection>
   );
 }
 
